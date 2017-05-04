@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.*;
  * @author 12545404
  */
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "user")
 public class User implements Serializable{
     @XmlElement(name = "email")
     private String email;

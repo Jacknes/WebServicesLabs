@@ -57,12 +57,18 @@ public class DiaryApplication {
     }
     
     public void updateXML(Users users) throws PropertyException, JAXBException, FileNotFoundException {
-     
         JAXBContext jc = JAXBContext.newInstance(Users.class);
         Marshaller m = jc.createMarshaller();     
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);  
-        m.marshal(users, new FileOutputStream("users.xml")); 
+        m.marshal(users, new FileOutputStream("WEB-INF/users.xml"));    
+    }
+    
+    public void addUser(User user) throws JAXBException, PropertyException, FileNotFoundException, IOException 
+    {
+        if(user != null)
+            users.addUser(user);
         
+        updateXML(this.users);
     }
     
 }
