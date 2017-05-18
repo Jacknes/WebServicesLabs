@@ -24,14 +24,12 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Add_QNAME = new QName("http://soap.wsd.uts/", "add");
-    private final static QName _AddResponse_QNAME = new QName("http://soap.wsd.uts/", "addResponse");
-    private final static QName _Div_QNAME = new QName("http://soap.wsd.uts/", "div");
-    private final static QName _DivResponse_QNAME = new QName("http://soap.wsd.uts/", "divResponse");
-    private final static QName _Mul_QNAME = new QName("http://soap.wsd.uts/", "mul");
-    private final static QName _MulResponse_QNAME = new QName("http://soap.wsd.uts/", "mulResponse");
-    private final static QName _Sub_QNAME = new QName("http://soap.wsd.uts/", "sub");
-    private final static QName _SubResponse_QNAME = new QName("http://soap.wsd.uts/", "subResponse");
+    private final static QName _FetchUser_QNAME = new QName("http://soap.wsd.uts/", "fetchUser");
+    private final static QName _FetchUserResponse_QNAME = new QName("http://soap.wsd.uts/", "fetchUserResponse");
+    private final static QName _FetchUsers_QNAME = new QName("http://soap.wsd.uts/", "fetchUsers");
+    private final static QName _FetchUsersResponse_QNAME = new QName("http://soap.wsd.uts/", "fetchUsersResponse");
+    private final static QName _User_QNAME = new QName("http://soap.wsd.uts/", "user");
+    private final static QName _Users_QNAME = new QName("http://soap.wsd.uts/", "users");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: uts.wsd.soap.client
@@ -41,139 +39,105 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Add }
+     * Create an instance of {@link FetchUser }
      * 
      */
-    public Add createAdd() {
-        return new Add();
+    public FetchUser createFetchUser() {
+        return new FetchUser();
     }
 
     /**
-     * Create an instance of {@link AddResponse }
+     * Create an instance of {@link FetchUserResponse }
      * 
      */
-    public AddResponse createAddResponse() {
-        return new AddResponse();
+    public FetchUserResponse createFetchUserResponse() {
+        return new FetchUserResponse();
     }
 
     /**
-     * Create an instance of {@link Div }
+     * Create an instance of {@link FetchUsers }
      * 
      */
-    public Div createDiv() {
-        return new Div();
+    public FetchUsers createFetchUsers() {
+        return new FetchUsers();
     }
 
     /**
-     * Create an instance of {@link DivResponse }
+     * Create an instance of {@link FetchUsersResponse }
      * 
      */
-    public DivResponse createDivResponse() {
-        return new DivResponse();
+    public FetchUsersResponse createFetchUsersResponse() {
+        return new FetchUsersResponse();
     }
 
     /**
-     * Create an instance of {@link Mul }
+     * Create an instance of {@link User }
      * 
      */
-    public Mul createMul() {
-        return new Mul();
+    public User createUser() {
+        return new User();
     }
 
     /**
-     * Create an instance of {@link MulResponse }
+     * Create an instance of {@link Users }
      * 
      */
-    public MulResponse createMulResponse() {
-        return new MulResponse();
+    public Users createUsers() {
+        return new Users();
     }
 
     /**
-     * Create an instance of {@link Sub }
+     * Create an instance of {@link JAXBElement }{@code <}{@link FetchUser }{@code >}}
      * 
      */
-    public Sub createSub() {
-        return new Sub();
+    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "fetchUser")
+    public JAXBElement<FetchUser> createFetchUser(FetchUser value) {
+        return new JAXBElement<FetchUser>(_FetchUser_QNAME, FetchUser.class, null, value);
     }
 
     /**
-     * Create an instance of {@link SubResponse }
+     * Create an instance of {@link JAXBElement }{@code <}{@link FetchUserResponse }{@code >}}
      * 
      */
-    public SubResponse createSubResponse() {
-        return new SubResponse();
+    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "fetchUserResponse")
+    public JAXBElement<FetchUserResponse> createFetchUserResponse(FetchUserResponse value) {
+        return new JAXBElement<FetchUserResponse>(_FetchUserResponse_QNAME, FetchUserResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Add }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link FetchUsers }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "add")
-    public JAXBElement<Add> createAdd(Add value) {
-        return new JAXBElement<Add>(_Add_QNAME, Add.class, null, value);
+    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "fetchUsers")
+    public JAXBElement<FetchUsers> createFetchUsers(FetchUsers value) {
+        return new JAXBElement<FetchUsers>(_FetchUsers_QNAME, FetchUsers.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AddResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link FetchUsersResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "addResponse")
-    public JAXBElement<AddResponse> createAddResponse(AddResponse value) {
-        return new JAXBElement<AddResponse>(_AddResponse_QNAME, AddResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "fetchUsersResponse")
+    public JAXBElement<FetchUsersResponse> createFetchUsersResponse(FetchUsersResponse value) {
+        return new JAXBElement<FetchUsersResponse>(_FetchUsersResponse_QNAME, FetchUsersResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Div }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link User }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "div")
-    public JAXBElement<Div> createDiv(Div value) {
-        return new JAXBElement<Div>(_Div_QNAME, Div.class, null, value);
+    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "user")
+    public JAXBElement<User> createUser(User value) {
+        return new JAXBElement<User>(_User_QNAME, User.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DivResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Users }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "divResponse")
-    public JAXBElement<DivResponse> createDivResponse(DivResponse value) {
-        return new JAXBElement<DivResponse>(_DivResponse_QNAME, DivResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Mul }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "mul")
-    public JAXBElement<Mul> createMul(Mul value) {
-        return new JAXBElement<Mul>(_Mul_QNAME, Mul.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link MulResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "mulResponse")
-    public JAXBElement<MulResponse> createMulResponse(MulResponse value) {
-        return new JAXBElement<MulResponse>(_MulResponse_QNAME, MulResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Sub }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "sub")
-    public JAXBElement<Sub> createSub(Sub value) {
-        return new JAXBElement<Sub>(_Sub_QNAME, Sub.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SubResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "subResponse")
-    public JAXBElement<SubResponse> createSubResponse(SubResponse value) {
-        return new JAXBElement<SubResponse>(_SubResponse_QNAME, SubResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://soap.wsd.uts/", name = "users")
+    public JAXBElement<Users> createUsers(Users value) {
+        return new JAXBElement<Users>(_Users_QNAME, Users.class, null, value);
     }
 
 }
